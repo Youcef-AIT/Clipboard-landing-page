@@ -86,7 +86,7 @@ header > .btn {
 }
 
 /* header > h3 , main .devices */
-h3 {
+h3 , .main__computer-info {
     margin-bottom: 15px;
     font-size: 32px;
     color: var(--color-neutral-Dark-Grayish-Blue);
@@ -106,8 +106,13 @@ main {
 
 main .computer {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
     margin-bottom: 130px;
+}
+
+main .computer img {
+    width: 50%;
 }
 
 main #devices {
