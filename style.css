@@ -1,0 +1,375 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:wght@100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+:root {
+    --color-primary-strong-cyan: hsl(171, 66%, 44%);
+    --color-primary-light-blue: hsl(233, 100%, 69%);
+    --color-neutral-Dark-Grayish-Blue: hsl(210, 10%, 33%);
+    --color-neutral-Grayish-Blue: hsl(201, 11%, 66%);
+    --font-size: 18px;
+    --font-family: "Bai Jamjuree", sans-serif;
+    --font-weight-regular: 400;
+    --font-weight-semi-bold: 600;
+    --header-width: 650px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: auto;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    background-image: url(./images/bg-header-desktop.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-family: var(--font-family);
+    font-weight: var(--font-weight-regular);
+}
+
+.btn {
+    margin-bottom: 120px;
+}
+
+.download_btn {
+    text-decoration: none;
+    color: aliceblue;
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: var(--color-neutral-Grayish-Blue);
+    border-radius: 30px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.ios {
+    background-color: var(--color-primary-strong-cyan);
+}
+.mac {
+    background-color: var(--color-primary-light-blue);
+}
+
+header {
+    text-align: center;
+    width: var(--header-width);
+}
+
+header > img {
+    margin-top: 120px;
+    margin-bottom: 40px;
+}
+
+header > h1 {
+    color: var(--color-neutral-Dark-Grayish-Blue);
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: var(--font-size);
+    font-weight: var(--font-weight-regular);
+    color: var(--color-neutral-Grayish-Blue);
+    margin-bottom: 40px;
+    line-height: 25px;
+}
+
+header > .btn {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* header > h3 , main .devices */
+h3 {
+    margin-bottom: 15px;
+    font-size: 32px;
+    color: var(--color-neutral-Dark-Grayish-Blue);
+}
+
+header .track-p,
+main #access-clipboard-p {
+    margin-bottom: 60px;
+    font-size: 17px;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    min-height: auto;
+}
+
+main .computer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 130px;
+}
+
+main #devices {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#access-clipboard-p,
+#clipboard p {
+    width: 650px;
+    text-align: center;
+    margin-bottom: 90px;
+}
+
+main #devices img {
+    margin-bottom: 90px;
+}
+
+#Supercharge {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#Supercharge article {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+#Supercharge article div img {
+    width: 50px;
+    margin: 50px 0;
+}
+
+#Supercharge article div p {
+    margin-top: 20px;
+    width: 400px;
+}
+
+#sponcers {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#sponcers img {
+    height: 40px;
+    margin: 130px 0;
+}
+
+#clipboard {
+    text-align: center;
+}
+
+#clipboard p {
+    margin: 0 auto;
+    margin-bottom: 130px;
+}
+
+#info {
+    background-color: hsl(201, 11%, 66%, 0.1);
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#info .general-info {
+    display: flex;
+    width: 600px;
+    flex-wrap: wrap;
+}
+
+#info .general-info li {
+    list-style: none;
+    width: 200px;
+}
+
+#info .general-info li a {
+    text-decoration: none;
+    color: var(--color-neutral-Dark-Grayish-Blue);
+}
+
+#info .container {
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+}
+
+#info .social-media {
+    margin-left: 200px;
+}
+
+#info .social-media img {
+    margin-right: 20px;
+}
+
+@media (max-width: 1440px) {
+    #info .social-media {
+        margin-left: 100px;
+    }
+}
+
+@media (max-width: 1024px) {
+    #Supercharge article {
+        width: 70%;
+    }
+
+    #Supercharge article div p {
+        width: 250px;
+    }
+
+    #Supercharge article div p {
+        font-size: 14px;
+    }
+    #Supercharge article div h3 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 431px) {
+    h1,
+    h3,
+    h4,
+    h2 {
+        color: var(--color-neutral-Dark-Grayish-Blue);
+    }
+
+    header {
+        background-image: url(./images/bg-header-mobile.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        padding: 50px;
+    }
+
+    header img {
+        width: 140px;
+        margin-bottom: 80px;
+    }
+
+    header h1,
+    header p,
+    h3,
+    h4,
+    h2,
+    .main__computer-info p,
+    #Supercharge p,
+    #clipboard p {
+        margin: 0 auto;
+        width: 380px;
+        font-size: 36px;
+        margin-bottom: 20px;
+        font-weight: var(--font-weight-semi-bold);
+    }
+
+    header p,
+    .main__computer-info p,
+    #devices p,
+    #Supercharge p,
+    #clipboard p {
+        font-size: 16px;
+        width: 310px;
+        margin-bottom: 50px;
+        font-weight: var(--font-weight-regular);
+    }
+
+    .btn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .download_btn {
+        width: 340px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: var(--font-weight-semi-bold);
+    }
+
+    #Supercharge article,
+    #sponcers {
+        flex-direction: column;
+    }
+
+    header h3 {
+        font-size: 30px;
+    }
+
+    .computer,
+    #devices,
+    #Supercharge {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .computer img {
+        margin-top: -50px;
+        width: 85%;
+        height: 280px;
+        margin-bottom: 50px;
+    }
+
+    .main__computer-info p,
+    #devices p,
+    #Supercharge p,
+    #clipboard p {
+        font-size: 18px;
+    }
+
+    #devices img {
+        width: 95%;
+        height: 250px;
+    }
+
+    #Supercharge h3 {
+        width: auto;
+    }
+
+    #sponcers img {
+        width: 150px;
+        margin: 40px auto;
+    }
+
+    #sponcers {
+        margin-bottom: 150px;
+    }
+
+    #clipboard .download_btn:first-child {
+        margin-bottom: 20px;
+    }
+
+    #info {
+        height: 580px;
+    }
+
+    #info .container {
+        flex-direction: column;
+        align-items: center;
+        height: 500px;
+        text-align: center;
+    }
+
+    #info .general-info {
+        gap: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-weight: var(--font-weight-semi-bold);
+    }
+
+    #info .social-media {
+        margin: 0 auto;
+    }
+}
